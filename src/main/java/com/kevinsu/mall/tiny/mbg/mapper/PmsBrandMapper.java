@@ -2,14 +2,9 @@ package com.kevinsu.mall.tiny.mbg.mapper;
 
 import com.kevinsu.mall.tiny.mbg.model.PmsBrand;
 import com.kevinsu.mall.tiny.mbg.model.PmsBrandExample;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Component;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
-@Mapper
-@Component
 public interface PmsBrandMapper {
     int countByExample(PmsBrandExample example);
 
