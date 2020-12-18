@@ -2,11 +2,12 @@ package com.kevinsu.mall.tiny.mbg.mapper;
 
 import com.kevinsu.mall.tiny.mbg.model.PmsBrand;
 import com.kevinsu.mall.tiny.mbg.model.PmsBrandExample;
+import io.swagger.annotations.ApiModelProperty;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface PmsBrandMapper {
-    int countByExample(PmsBrandExample example);
+    long countByExample(PmsBrandExample example);
 
     int deleteByExample(PmsBrandExample example);
 
