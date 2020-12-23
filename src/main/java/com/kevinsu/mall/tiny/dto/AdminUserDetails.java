@@ -16,6 +16,9 @@ import java.util.stream.Collectors;
  * @since 2020-12-18-18:35
  */
 public class AdminUserDetails implements UserDetails {
+
+    QueueEnum queueEnum;
+
     private UmsAdmin umsAdmin;
     private List<UmsPermission> permissionList;
 

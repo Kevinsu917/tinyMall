@@ -72,6 +72,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .antMatchers("/admin/login", "/admin/register", "/admin/passwordInit")
                 .permitAll()
+                .antMatchers("/esProduct/**","/member/readHistory/**","/order/**")// 测
+                .permitAll()
                 .antMatchers(HttpMethod.OPTIONS)
                 .permitAll()
 //                .antMatchers("/**")//测试时全部运行访问
