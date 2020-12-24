@@ -56,3 +56,10 @@ jwt:
   secret: mySecret #JWT加解密使用的密钥
   expiration: 604800 #JWT的超期限时间(60*60*24)
   tokenHead: Bearer  #JWT负载中拿到开头
+
+# 自定义MinIOkey
+minio:
+  endpoint: http://192.168.0.180:9090
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucketNameImage: image
